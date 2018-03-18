@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/folder_page_white.png</file>
+        <file>images/control_stop.png</file>
+        <file>images/control_play.png</file>
+        <file>images/control_pause.png</file>
+    </qresource>
+</RCC>
