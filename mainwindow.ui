@@ -25,7 +25,7 @@
    </property>
    <widget class="QMenu" name="menufile">
     <property name="title">
-     <string>file</string>
+     <string>archivo</string>
     </property>
     <addaction name="actionOpen"/>
    </widget>
@@ -37,8 +37,15 @@
     <addaction name="actionPause"/>
     <addaction name="actionStop"/>
    </widget>
+   <widget class="QMenu" name="menuAvanzado">
+    <property name="title">
+     <string>Avanzado</string>
+    </property>
+    <addaction name="actionBuffer"/>
+   </widget>
    <addaction name="menufile"/>
    <addaction name="menuVideo"/>
+   <addaction name="menuAvanzado"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -60,7 +67,7 @@
      <normaloff>:/images/images/folder_page_white.png</normaloff>:/images/images/folder_page_white.png</iconset>
    </property>
    <property name="text">
-    <string>Open</string>
+    <string>Abrir</string>
    </property>
    <property name="toolTip">
     <string>open a file</string>
@@ -91,6 +98,11 @@
    </property>
    <property name="text">
     <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionBuffer">
+   <property name="text">
+    <string>Buffer</string>
    </property>
   </action>
  </widget>

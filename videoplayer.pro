@@ -25,13 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    buffer.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    buffer.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    buffer.ui
 
 RESOURCES += \
     resources.qrc

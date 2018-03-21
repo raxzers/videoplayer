@@ -7,6 +7,8 @@
 #include <QDialog>
 #include <QProgressBar>
 #include <QSlider>
+#include <QFileDialog>
+#include <QAbstractVideoBuffer>
 
 
 namespace Ui {
@@ -30,13 +32,15 @@ private slots:
 
     void on_actionStop_triggered();
 
+    void on_actionBuffer_triggered();
+
 private:
     Ui::MainWindow *ui;
     QMediaPlayer* player;
     QVideoWidget* vw;
     QProgressBar* bar;
     QSlider* slider;
-
+    QAbstractVideoBuffer* buff;
 };
 
 #endif // MAINWINDOW_H

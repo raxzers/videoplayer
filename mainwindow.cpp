@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "buffer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -60,4 +61,11 @@ void MainWindow::on_actionStop_triggered()
 {
     player->stop();
     ui->statusBar->showMessage("detenido");
+}
+
+void MainWindow::on_actionBuffer_triggered()
+{
+ buffer b;
+ b.setModal(true);
+ b.exec();
 }
